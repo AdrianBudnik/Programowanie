@@ -9,6 +9,14 @@ public class Task {
     String taskDateTimeStart;
     String taskDateTimeStop;
 
+    public Task() {
+        this.taskName = "undefined";
+        this.taskDescription = "undefined";
+        this.taskCategory = TaskCategory.NEW;
+        this.taskDateTimeStart = "undefined";
+        this.taskDateTimeStop = "undefined";
+    }
+
     public Task(String taskName, String taskDescription, TaskCategory taskCategory, String taskDateTimeStop) {
         this.taskName = taskName;
         this.taskDescription = taskDescription;
