@@ -17,6 +17,12 @@ public class Task {
         this.taskDateTimeStop = "undefined";
     }
 
+    public Task(String taskName, String taskDescription, TaskCategory taskCategory) {
+        this.taskName = taskName;
+        this.taskDescription = taskDescription;
+        this.taskCategory = taskCategory;
+    }
+
     public Task(String taskName, String taskDescription, TaskCategory taskCategory, String taskDateTimeStop) {
         this.taskName = taskName;
         this.taskDescription = taskDescription;
