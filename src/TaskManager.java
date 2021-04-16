@@ -1,13 +1,10 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public interface TaskManager {
     public Task addTask(Task t);
     public void removeTask(Task t);
     public Task[] getAllTasks();
     public Task getTaskByName(String taskName);
 
-    public static final Task [] tasks = {
+    public static Task [] tasks = {
             new Task("Odkurzanie", "Odkurzyc mieszkanie", TaskCategory.DONE),
             new Task("Zmywanie", "Zmyc naczynia", TaskCategory.IN_PROGRESS),
             new Task("Silownia", "Wyjsc na silownie", TaskCategory.DONE),
